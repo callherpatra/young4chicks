@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <h1>CHICK REQUEST FORM</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <form id="Form">
+            <div class="mb-3">
+              <label for="fname" class="form-label">Farmer name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="fname"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="age" class="form-label">Age:</label>
+              <input type="number" class="form-control" id="age" />
+            </div>
+            <div class="mb-3">
+              <label for="chickType" class="form-label">Chick Type:</label>
+              <select
+                class="form-select"
+                aria-label="Default select example"
+                id="chickType"
+              >
+                <option value="1">Layers</option>
+                <option value="2">Broilers</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="number" class="form-label">Quantity:</label>
+              <input type="number" class="form-control" id="number" />
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+          <p id="message"></p>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div class="row">
+        <div class="col">
+          <table class="table" id="rtable">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Chick Type</th>
+                <th>Quantity</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="request.js"></script>
+  </body>
+</html>
